@@ -47,12 +47,10 @@ The repository is organized into 8 assignment folders, each containing Java solu
 **Topics Covered:**
 - Min-Priority Queue Verification
 - Key Updates in Max-Priority Queue
+- Finding Kth Largest Element using Heap
 - Heap Sort Implementation
-- Build Heap Operations
-- Priority Queue Operations
-- Advanced Heap Problems
 
-**Files:** Q1.java - Q6.java
+**Files:** Q1.java - Q4.java
 
 ---
 
@@ -76,11 +74,10 @@ The repository is organized into 8 assignment folders, each containing Java solu
 - Stack Implementation using Linked Lists
 - Sorted Insertion in Stack
 - Sorting Stacks
+- Insert at Bottom of Stack
 - Reversing Stacks
-- Stack Applications
-- Advanced Stack Problems
 
-**Files:** Q1.java - Q7.java
+**Files:** Q1.java - Q6.java
 
 ---
 
@@ -100,13 +97,12 @@ The repository is organized into 8 assignment folders, each containing Java solu
 **Topics Covered:**
 - Binary Tree Creation from Array
 - Binary Tree Creation from Linked List
-- Pre-order Traversal
-- Post-order Traversal
-- In-order Traversal
-- Leaf Node Calculation
-- Advanced Tree Operations
+- Tree Traversals (Pre-order, Post-order, In-order)
+- Print Paths from Root to Leaf Nodes
+- Count Leaf Nodes
+- Find Maximum Value in Binary Tree
 
-**Files:** Q1.java - Q7.java
+**Files:** Q1.java - Q6.java
 
 ---
 
