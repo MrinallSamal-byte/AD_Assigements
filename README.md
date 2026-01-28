@@ -86,15 +86,13 @@ The repository is organized into 8 assignment folders, each containing Java solu
 
 ### Assignment 8 - Queues
 **Topics Covered:**
-- Queue Implementation
+- Queue Implementation using Arrays
+- Queue Implementation using Linked Lists
+- Reverse Stack using Queue
 - Sliding Window Maximum
 - Josephus Problem Simulation
-- Circular Queue
-- Deque Operations
-- Priority Queue Implementation
-- Queue Applications
 
-**Files:** Q1.java - Q7.java
+**Files:** Q1.java - Q5.java
 
 ---
 

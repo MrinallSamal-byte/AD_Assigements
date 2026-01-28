@@ -1,80 +1,145 @@
 import java.util.Scanner;
-import java.util.Deque;
-import java.util.LinkedList;
 
 public class Q2 {
 
     
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+    static class Node {
+        int data;
+        Node next;
         
-        System.out.print("Enter the size of array: ");
-        int n = sc.nextInt();
+        Node(int data) {
+            this.data = data;
+            this.next = null;
+        }
+    }
+    
+    static class Queue {
+        private Node front;
+        private Node rear;
+        private int size;
         
-        int[] arr = new int[n];
-        System.out.println("Enter " + n + " elements:");
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+        public Queue() {
+            front = null;
+            rear = null;
+            size = 0;
         }
         
-        System.out.print("Enter window size: ");
-        int k = sc.nextInt();
-        
-        if (k <= 0 || k > n) {
-            System.out.println("Invalid window size");
-        } else {
-            int[] result = maxSlidingWindow(arr, k);
+
+        public void enqueue(int value) {
+            Node newNode = new Node(value);
             
-            System.out.print("Maximum in each sliding window: ");
-            for (int num : result) {
-                System.out.print(num + " ");
+            if (rear == null) {
+                front = rear = newNode;
+            } else {
+                rear.next = newNode;
+                rear = newNode;
+            }
+            
+            size++;
+            System.out.println("Enqueued: " + value);
+        }
+        
+
+        public int dequeue() {
+            if (isEmpty()) {
+                System.out.println("Queue Underflow! Cannot dequeue");
+                return -1;
+            }
+            
+            int value = front.data;
+            front = front.next;
+            
+            if (front == null) {
+                rear = null;
+            }
+            
+            size--;
+            return value;
+        }
+        
+
+        public int peek() {
+            if (isEmpty()) {
+                System.out.println("Queue is empty");
+                return -1;
+            }
+            return front.data;
+        }
+        
+
+        public boolean isEmpty() {
+            return (front == null);
+        }
+        
+
+        public int size() {
+            return size;
+        }
+        
+
+        public void display() {
+            if (isEmpty()) {
+                System.out.println("Queue is empty");
+                return;
+            }
+            
+            System.out.print("Queue: ");
+            Node current = front;
+            while (current != null) {
+                System.out.print(current.data + " ");
+                current = current.next;
             }
             System.out.println();
         }
-        
-        sc.close();
     }
     
-
-    public static int[] maxSlidingWindow(int[] arr, int k) {
-        int n = arr.length;
-        if (n == 0 || k == 0) {
-            return new int[0];
-        }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        Queue queue = new Queue();
         
-        int[] result = new int[n - k + 1];
-        Deque<Integer> deque = new LinkedList<>();
+        System.out.println("Queue Operations (Linked List):");
+        System.out.println("1. Enqueue");
+        System.out.println("2. Dequeue");
+        System.out.println("3. Peek");
+        System.out.println("4. Display");
+        System.out.println("5. Exit");
         
-
-        for (int i = 0; i < k; i++) {
-
-            while (!deque.isEmpty() && arr[i] >= arr[deque.peekLast()]) {
-                deque.removeLast();
-            }
-            deque.addLast(i);
-        }
-        
-
-        for (int i = k; i < n; i++) {
-
-            result[i - k] = arr[deque.peekFirst()];
+        while (true) {
+            System.out.print("\nEnter your choice: ");
+            int choice = sc.nextInt();
             
-
-            while (!deque.isEmpty() && deque.peekFirst() <= i - k) {
-                deque.removeFirst();
+            switch (choice) {
+                case 1:
+                    System.out.print("Enter value to enqueue: ");
+                    int value = sc.nextInt();
+                    queue.enqueue(value);
+                    break;
+                    
+                case 2:
+                    int dequeued = queue.dequeue();
+                    if (dequeued != -1) {
+                        System.out.println("Dequeued: " + dequeued);
+                    }
+                    break;
+                    
+                case 3:
+                    int front = queue.peek();
+                    if (front != -1) {
+                        System.out.println("Front element: " + front);
+                    }
+                    break;
+                    
+                case 4:
+                    queue.display();
+                    break;
+                    
+                case 5:
+                    sc.close();
+                    return;
+                    
+                default:
+                    System.out.println("Invalid choice");
             }
-            
-
-            while (!deque.isEmpty() && arr[i] >= arr[deque.peekLast()]) {
-                deque.removeLast();
-            }
-            
-            deque.addLast(i);
         }
-        
-
-        result[n - k] = arr[deque.peekFirst()];
-        
-        return result;
     }
 }
