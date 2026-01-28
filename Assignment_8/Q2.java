@@ -123,9 +123,9 @@ public class Q2 {
                     break;
                     
                 case 3:
-                    int front = queue.peek();
-                    if (front != -1) {
-                        System.out.println("Front element: " + front);
+                    int frontElement = queue.peek();
+                    if (frontElement != -1) {
+                        System.out.println("Front element: " + frontElement);
                     }
                     break;
                     
