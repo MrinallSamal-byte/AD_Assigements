@@ -47,12 +47,12 @@ The repository is organized into 8 assignment folders, each containing Java solu
 **Topics Covered:**
 - Min-Priority Queue Verification
 - Key Updates in Max-Priority Queue
+- Finding Kth Largest Element using Heap
 - Heap Sort Implementation
-- Build Heap Operations
-- Priority Queue Operations
-- Advanced Heap Problems
 
-**Files:** Q1.java - Q6.java
+**Files:** Q1.java - Q4.java
+
+**Note:** Matches all 4 questions from EXPERIMENT-05.pdf
 
 ---
 
@@ -76,25 +76,24 @@ The repository is organized into 8 assignment folders, each containing Java solu
 - Stack Implementation using Linked Lists
 - Sorted Insertion in Stack
 - Sorting Stacks
-- Reversing Stacks
-- Stack Applications
-- Advanced Stack Problems
+- Insert at Bottom of Stack
+- Reverse Stack
 
-**Files:** Q1.java - Q7.java
+**Files:** Q1.java - Q6.java
+
+**Note:** Matches all 6 questions from EXPERIMENT-07.pdf
 
 ---
 
 ### Assignment 8 - Queues
 **Topics Covered:**
-- Queue Implementation
+- Queue Implementation using Arrays
+- Queue Implementation using Linked Lists
+- Reverse Stack using Queue
 - Sliding Window Maximum
 - Josephus Problem Simulation
-- Circular Queue
-- Deque Operations
-- Priority Queue Implementation
-- Queue Applications
 
-**Files:** Q1.java - Q7.java
+**Files:** Q1.java - Q5.java
 
 ---
 
@@ -105,10 +104,11 @@ The repository is organized into 8 assignment folders, each containing Java solu
 - Pre-order Traversal
 - Post-order Traversal
 - In-order Traversal
-- Leaf Node Calculation
-- Advanced Tree Operations
+- Count Leaf Nodes and Other Node Counting Operations
 
-**Files:** Q1.java - Q7.java
+**Files:** Q1.java - Q6.java
+
+**Note:** Question 3 from experiment (all 3 traversals) is split across Q3, Q4, Q5 for clarity
 
 ---
 
