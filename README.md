@@ -4,9 +4,9 @@ This repository contains complete Java implementations for all Algorithm Design 
 
 ## Repository Structure
 
-The repository is organized into 8 experiment folders, each containing Java solutions for specific algorithmic topics:
+The repository is organized into 8 assignment folders, each containing Java solutions for specific algorithmic topics:
 
-### Experiment 02 - Recursion & Basics
+### Assignment 2 - Recursion & Basics
 **Topics Covered:**
 - Factorial (Recursive Implementation)
 - Fibonacci Series (Recursive)
@@ -19,7 +19,7 @@ The repository is organized into 8 experiment folders, each containing Java solu
 
 ---
 
-### Experiment 03 - Array Manipulation
+### Assignment 3 - Array Manipulation
 **Topics Covered:**
 - Array Reduction Operations
 - Merging Sorted Arrays
@@ -31,7 +31,7 @@ The repository is organized into 8 experiment folders, each containing Java solu
 
 ---
 
-### Experiment 04 - Sorting & Searching
+### Assignment 4 - Sorting & Searching
 **Topics Covered:**
 - Efficient Sort Verification
 - Finding Element Pairs with Specific Differences
@@ -43,7 +43,7 @@ The repository is organized into 8 experiment folders, each containing Java solu
 
 ---
 
-### Experiment 05 - Heaps & Priority Queues
+### Assignment 5 - Heaps & Priority Queues
 **Topics Covered:**
 - Min-Priority Queue Verification
 - Key Updates in Max-Priority Queue
@@ -56,7 +56,7 @@ The repository is organized into 8 experiment folders, each containing Java solu
 
 ---
 
-### Experiment 06 - Linked Lists
+### Assignment 6 - Linked Lists
 **Topics Covered:**
 - Singly Linked List Operations
 - Doubly Linked List Operations
@@ -70,7 +70,7 @@ The repository is organized into 8 experiment folders, each containing Java solu
 
 ---
 
-### Experiment 07 - Stacks
+### Assignment 7 - Stacks
 **Topics Covered:**
 - Stack Implementation using Arrays
 - Stack Implementation using Linked Lists
@@ -84,7 +84,7 @@ The repository is organized into 8 experiment folders, each containing Java solu
 
 ---
 
-### Experiment 08 - Queues
+### Assignment 8 - Queues
 **Topics Covered:**
 - Queue Implementation
 - Sliding Window Maximum
@@ -98,7 +98,7 @@ The repository is organized into 8 experiment folders, each containing Java solu
 
 ---
 
-### Experiment 09 - Trees
+### Assignment 9 - Trees
 **Topics Covered:**
 - Binary Tree Creation from Array
 - Binary Tree Creation from Linked List
@@ -116,25 +116,25 @@ The repository is organized into 8 experiment folders, each containing Java solu
 
 ### Compile a single Java file:
 ```bash
-javac Experiment_XX/QY.java
+javac Assignment_X/QY.java
 ```
 
 ### Run the compiled program:
 ```bash
-java -cp Experiment_XX QY
+java -cp Assignment_X QY
 ```
 
 ### Example:
 ```bash
 # Compile
-javac Experiment_05/Q1.java
+javac Assignment_5/Q1.java
 
 # Run
-java -cp Experiment_05 Q1
+java -cp Assignment_5 Q1
 ```
 
 ## Total Count
-- **8 Experiments**
+- **8 Assignments**
 - **~50 Java Solution Files**
 - **All core Algorithm Design topics covered**
 
