@@ -52,6 +52,8 @@ The repository is organized into 8 assignment folders, each containing Java solu
 
 **Files:** Q1.java - Q4.java
 
+**Note:** Matches all 4 questions from EXPERIMENT-05.pdf
+
 ---
 
 ### Assignment 6 - Linked Lists
@@ -75,9 +77,11 @@ The repository is organized into 8 assignment folders, each containing Java solu
 - Sorted Insertion in Stack
 - Sorting Stacks
 - Insert at Bottom of Stack
-- Reversing Stacks
+- Reverse Stack
 
 **Files:** Q1.java - Q6.java
+
+**Note:** Matches all 6 questions from EXPERIMENT-07.pdf
 
 ---
 
@@ -97,12 +101,14 @@ The repository is organized into 8 assignment folders, each containing Java solu
 **Topics Covered:**
 - Binary Tree Creation from Array
 - Binary Tree Creation from Linked List
-- Tree Traversals (Pre-order, Post-order, In-order)
-- Print Paths from Root to Leaf Nodes
-- Count Leaf Nodes
-- Find Maximum Value in Binary Tree
+- Pre-order Traversal
+- Post-order Traversal
+- In-order Traversal
+- Count Leaf Nodes and Other Node Counting Operations
 
 **Files:** Q1.java - Q6.java
+
+**Note:** Question 3 from experiment (all 3 traversals) is split across Q3, Q4, Q5 for clarity
 
 ---
 
