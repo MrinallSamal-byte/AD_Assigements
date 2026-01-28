@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q1 {
-    // Objective: Reduce array by removing elements that satisfy certain conditions
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -15,7 +15,7 @@ public class Q1 {
             arr[i] = sc.nextInt();
         }
         
-        // Remove duplicate elements
+
         int newSize = removeDuplicates(arr, n);
         
         System.out.print("Array after reduction: ");
@@ -27,7 +27,7 @@ public class Q1 {
         sc.close();
     }
     
-    // Function to remove duplicates from sorted array
+
     public static int removeDuplicates(int[] arr, int n) {
         if (n == 0 || n == 1) {
             return n;

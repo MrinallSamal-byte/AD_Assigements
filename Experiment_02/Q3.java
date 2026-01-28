@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q3 {
-    // Objective: Implement Linear Search using recursion
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class Q3 {
         sc.close();
     }
     
-    // Recursive function for linear search
+
     public static int linearSearch(int[] arr, int n, int key) {
         if (n == 0) {
             return -1;

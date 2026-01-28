@@ -3,7 +3,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Q7 {
-    // Objective: Level-order traversal and advanced tree operations
+
     
     static class Node {
         int data;
@@ -18,7 +18,7 @@ public class Q7 {
     static class BinaryTree {
         Node root;
         
-        // Create binary tree from array
+
         public Node createFromArray(int[] arr, int index) {
             Node node = null;
             
@@ -31,7 +31,7 @@ public class Q7 {
             return node;
         }
         
-        // Level-order traversal (Breadth-First Search)
+
         public void levelOrder(Node node) {
             if (node == null) return;
             
@@ -51,7 +51,7 @@ public class Q7 {
             }
         }
         
-        // Search for a value in tree
+
         public boolean search(Node node, int key) {
             if (node == null) {
                 return false;
@@ -64,7 +64,7 @@ public class Q7 {
             return search(node.left, key) || search(node.right, key);
         }
         
-        // Find maximum value in tree
+
         public int findMax(Node node) {
             if (node == null) {
                 return Integer.MIN_VALUE;
@@ -84,7 +84,7 @@ public class Q7 {
             return max;
         }
         
-        // Find minimum value in tree
+
         public int findMin(Node node) {
             if (node == null) {
                 return Integer.MAX_VALUE;

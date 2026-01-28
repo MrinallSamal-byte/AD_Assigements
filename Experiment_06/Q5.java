@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Q5 {
-    // Objective: Detect cycle in a Linked List (Floyd's Cycle Detection)
+
     
-    // Node class
+
     static class Node {
         int data;
         Node next;
@@ -17,7 +17,7 @@ public class Q5 {
     static class LinkedList {
         Node head;
         
-        // Insert at end
+
         public void insertAtEnd(int data) {
             Node newNode = new Node(data);
             
@@ -33,7 +33,7 @@ public class Q5 {
             current.next = newNode;
         }
         
-        // Create a cycle for testing
+
         public void createCycle(int pos) {
             if (head == null || pos < 0) return;
             
@@ -58,7 +58,7 @@ public class Q5 {
             }
         }
         
-        // Floyd's Cycle Detection Algorithm
+
         public boolean detectCycle() {
             if (head == null) {
                 return false;
@@ -79,7 +79,7 @@ public class Q5 {
             return false;
         }
         
-        // Display the list (without cycle)
+
         public void display() {
             if (head == null) {
                 System.out.println("List is empty");

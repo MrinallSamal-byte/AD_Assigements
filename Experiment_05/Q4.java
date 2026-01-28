@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q4 {
-    // Objective: Build a min heap from an array
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -26,15 +26,15 @@ public class Q4 {
         sc.close();
     }
     
-    // Function to build a min heap
+
     public static void buildMinHeap(int[] arr, int n) {
-        // Start from last internal node and heapify all nodes
+
         for (int i = (n / 2) - 1; i >= 0; i--) {
             minHeapify(arr, n, i);
         }
     }
     
-    // Function to maintain min heap property
+
     public static void minHeapify(int[] arr, int n, int i) {
         int smallest = i;
         int left = 2 * i + 1;
@@ -57,7 +57,7 @@ public class Q4 {
         }
     }
     
-    // Helper function to print array
+
     public static void printArray(int[] arr, int n) {
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");

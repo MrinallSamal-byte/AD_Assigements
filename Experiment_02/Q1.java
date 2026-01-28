@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q1 {
-    // Objective: Calculate factorial of a number using recursion
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class Q1 {
         sc.close();
     }
     
-    // Recursive function to calculate factorial
+
     public static long factorial(int n) {
         if (n == 0 || n == 1) {
             return 1;

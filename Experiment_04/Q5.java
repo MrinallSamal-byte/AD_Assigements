@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q5 {
-    // Objective: Implement Quick Sort algorithm
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -26,7 +26,7 @@ public class Q5 {
         sc.close();
     }
     
-    // Quick Sort implementation
+
     public static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
             int pi = partition(arr, low, high);
@@ -36,7 +36,7 @@ public class Q5 {
         }
     }
     
-    // Partition function for Quick Sort
+
     public static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
         int i = low - 1;
@@ -57,7 +57,7 @@ public class Q5 {
         return i + 1;
     }
     
-    // Helper function to print array
+
     public static void printArray(int[] arr, int n) {
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");

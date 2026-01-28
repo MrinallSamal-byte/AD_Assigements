@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class Q3 {
-    // Objective: Find the kth smallest element in an array
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -29,13 +29,13 @@ public class Q3 {
         sc.close();
     }
     
-    // Function to find kth smallest element using sorting
+
     public static int findKthSmallest(int[] arr, int n, int k) {
         Arrays.sort(arr);
         return arr[k - 1];
     }
     
-    // Alternative: Using QuickSelect algorithm (more efficient)
+
     public static int findKthSmallestQuickSelect(int[] arr, int left, int right, int k) {
         if (k > 0 && k <= right - left + 1) {
             int pos = partition(arr, left, right);

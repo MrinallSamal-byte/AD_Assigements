@@ -3,7 +3,7 @@ import java.util.PriorityQueue;
 import java.util.Collections;
 
 public class Q6 {
-    // Objective: Find k largest elements in an array using heap
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -29,16 +29,16 @@ public class Q6 {
         sc.close();
     }
     
-    // Function to find k largest elements using min heap
+
     public static void findKLargest(int[] arr, int n, int k) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         
-        // Add first k elements to the heap
+
         for (int i = 0; i < k; i++) {
             minHeap.add(arr[i]);
         }
         
-        // Process remaining elements
+
         for (int i = k; i < n; i++) {
             if (arr[i] > minHeap.peek()) {
                 minHeap.poll();
@@ -53,7 +53,7 @@ public class Q6 {
         System.out.println();
     }
     
-    // Alternative approach using max heap
+
     public static void findKLargestMaxHeap(int[] arr, int n, int k) {
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
         

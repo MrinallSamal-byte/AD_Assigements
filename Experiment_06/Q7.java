@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Q7 {
-    // Objective: Find the middle element of a linked list
+
     
-    // Node class
+
     static class Node {
         int data;
         Node next;
@@ -17,7 +17,7 @@ public class Q7 {
     static class LinkedList {
         Node head;
         
-        // Insert at end
+
         public void insertAtEnd(int data) {
             Node newNode = new Node(data);
             
@@ -33,7 +33,7 @@ public class Q7 {
             current.next = newNode;
         }
         
-        // Find middle using slow and fast pointers
+
         public int findMiddle() {
             if (head == null) {
                 return -1;
@@ -50,7 +50,7 @@ public class Q7 {
             return slow.data;
         }
         
-        // Find middle by counting
+
         public int findMiddleByCount() {
             if (head == null) {
                 return -1;
@@ -59,13 +59,13 @@ public class Q7 {
             int count = 0;
             Node temp = head;
             
-            // Count nodes
+
             while (temp != null) {
                 count++;
                 temp = temp.next;
             }
             
-            // Find middle
+
             temp = head;
             for (int i = 0; i < count / 2; i++) {
                 temp = temp.next;
@@ -74,7 +74,7 @@ public class Q7 {
             return temp.data;
         }
         
-        // Display the list
+
         public void display() {
             if (head == null) {
                 System.out.println("List is empty");

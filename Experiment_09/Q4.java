@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q4 {
-    // Objective: Implement Post-order Traversal (Left -> Right -> Root)
+
     
     static class Node {
         int data;
@@ -16,7 +16,7 @@ public class Q4 {
     static class BinaryTree {
         Node root;
         
-        // Create binary tree from array
+
         public Node createFromArray(int[] arr, int index) {
             Node node = null;
             
@@ -29,7 +29,7 @@ public class Q4 {
             return node;
         }
         
-        // Postorder traversal (Recursive)
+
         public void postorderRecursive(Node node) {
             if (node != null) {
                 postorderRecursive(node.left);
@@ -38,7 +38,7 @@ public class Q4 {
             }
         }
         
-        // Postorder traversal (Iterative using two stacks)
+
         public void postorderIterative(Node node) {
             if (node == null) return;
             

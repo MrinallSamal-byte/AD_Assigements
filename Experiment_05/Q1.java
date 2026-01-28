@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
 public class Q1 {
-    // Objective: Given a list of integers, determine if it forms a MIN-Priority Queue
+
     
     public static void main(String[] args) {
-        int[] A = {1, 3, 2, 7, 4, 6, 5, 8}; // Example Input
+        int[] A = {1, 3, 2, 7, 4, 6, 5, 8};
         
         if (isMinHeap(A)) {
             System.out.println("Output: YES"); 
@@ -15,13 +15,13 @@ public class Q1 {
 
     public static boolean isMinHeap(int[] A) {
         int n = A.length;
-        // Check heap property for every internal node
+
         for (int i = 0; i <= (n - 2) / 2; i++) {
-            // If left child is smaller than parent
+
             if (A[2 * i + 1] < A[i]) {
                 return false;
             }
-            // If right child exists and is smaller than parent
+
             if (2 * i + 2 < n && A[2 * i + 2] < A[i]) {
                 return false;
             }

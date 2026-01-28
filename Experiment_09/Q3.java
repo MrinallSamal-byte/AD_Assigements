@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q3 {
-    // Objective: Implement Pre-order Traversal (Root -> Left -> Right)
+
     
     static class Node {
         int data;
@@ -16,7 +16,7 @@ public class Q3 {
     static class BinaryTree {
         Node root;
         
-        // Insert nodes
+
         public Node insert(Node node, int data) {
             if (node == null) {
                 return new Node(data);
@@ -35,7 +35,7 @@ public class Q3 {
             return node;
         }
         
-        // Preorder traversal (Recursive)
+
         public void preorderRecursive(Node node) {
             if (node != null) {
                 System.out.print(node.data + " ");
@@ -44,7 +44,7 @@ public class Q3 {
             }
         }
         
-        // Preorder traversal (Iterative)
+
         public void preorderIterative(Node node) {
             if (node == null) return;
             

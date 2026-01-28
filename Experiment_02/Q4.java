@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q4 {
-    // Objective: Implement Binary Search using recursion
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class Q4 {
         sc.close();
     }
     
-    // Recursive function for binary search
+
     public static int binarySearch(int[] arr, int left, int right, int key) {
         if (left > right) {
             return -1;

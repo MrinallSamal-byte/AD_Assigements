@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.PriorityQueue;
 
 public class Q5 {
-    // Objective: Implement Priority Queue operations using Java's PriorityQueue
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);

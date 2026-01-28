@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q2 {
-    // Objective: Update key in a Max-Priority Queue (Max Heap)
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -26,7 +26,7 @@ public class Q2 {
         sc.close();
     }
     
-    // Function to update key in max heap
+
     public static void updateKey(int[] heap, int index, int newValue, int n) {
         if (index < 0 || index >= n) {
             System.out.println("Invalid index");
@@ -37,7 +37,7 @@ public class Q2 {
         heap[index] = newValue;
         
         if (newValue > oldValue) {
-            // Bubble up
+
             while (index > 0 && heap[index] > heap[(index - 1) / 2]) {
                 int temp = heap[index];
                 heap[index] = heap[(index - 1) / 2];
@@ -45,12 +45,12 @@ public class Q2 {
                 index = (index - 1) / 2;
             }
         } else {
-            // Bubble down
+
             maxHeapify(heap, n, index);
         }
     }
     
-    // Function to maintain max heap property
+
     public static void maxHeapify(int[] heap, int n, int i) {
         int largest = i;
         int left = 2 * i + 1;
@@ -72,7 +72,7 @@ public class Q2 {
         }
     }
     
-    // Helper function to print array
+
     public static void printArray(int[] arr, int n) {
         for (int i = 0; i < n; i++) {
             System.out.print(arr[i] + " ");

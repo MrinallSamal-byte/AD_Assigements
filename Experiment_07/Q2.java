@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q2 {
-    // Objective: Implement Stack using Linked List
+
     
     static class Node {
         int data;
@@ -20,7 +20,7 @@ public class Q2 {
             top = null;
         }
         
-        // Push element onto stack
+
         public void push(int value) {
             Node newNode = new Node(value);
             newNode.next = top;
@@ -28,7 +28,7 @@ public class Q2 {
             System.out.println("Pushed: " + value);
         }
         
-        // Pop element from stack
+
         public int pop() {
             if (isEmpty()) {
                 System.out.println("Stack Underflow! Cannot pop");
@@ -39,7 +39,7 @@ public class Q2 {
             return value;
         }
         
-        // Peek top element
+
         public int peek() {
             if (isEmpty()) {
                 System.out.println("Stack is empty");
@@ -48,12 +48,12 @@ public class Q2 {
             return top.data;
         }
         
-        // Check if stack is empty
+
         public boolean isEmpty() {
             return (top == null);
         }
         
-        // Display stack
+
         public void display() {
             if (isEmpty()) {
                 System.out.println("Stack is empty");

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q6 {
-    // Objective: Calculate number of leaf nodes in a binary tree
+
     
     static class Node {
         int data;
@@ -16,7 +16,7 @@ public class Q6 {
     static class BinaryTree {
         Node root;
         
-        // Create binary tree from array
+
         public Node createFromArray(int[] arr, int index) {
             Node node = null;
             
@@ -29,7 +29,7 @@ public class Q6 {
             return node;
         }
         
-        // Count leaf nodes
+
         public int countLeafNodes(Node node) {
             if (node == null) {
                 return 0;
@@ -42,7 +42,7 @@ public class Q6 {
             return countLeafNodes(node.left) + countLeafNodes(node.right);
         }
         
-        // Count total nodes
+
         public int countTotalNodes(Node node) {
             if (node == null) {
                 return 0;
@@ -51,7 +51,7 @@ public class Q6 {
             return 1 + countTotalNodes(node.left) + countTotalNodes(node.right);
         }
         
-        // Count internal nodes (non-leaf nodes)
+
         public int countInternalNodes(Node node) {
             if (node == null || (node.left == null && node.right == null)) {
                 return 0;
@@ -60,7 +60,7 @@ public class Q6 {
             return 1 + countInternalNodes(node.left) + countInternalNodes(node.right);
         }
         
-        // Calculate height of tree
+
         public int height(Node node) {
             if (node == null) {
                 return 0;

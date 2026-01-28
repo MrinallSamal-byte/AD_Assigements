@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.Arrays;
 
 public class Q2 {
-    // Objective: Find pairs of elements with a specific difference
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -28,7 +28,7 @@ public class Q2 {
         sc.close();
     }
     
-    // Function to find if a pair with given difference exists
+
     public static boolean findPairWithDifference(int[] arr, int n, int diff) {
         Arrays.sort(arr);
         

@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q1 {
-    // Objective: Create Binary Tree from Array representation
+
     
     static class Node {
         int data;
@@ -16,7 +16,7 @@ public class Q1 {
     static class BinaryTree {
         Node root;
         
-        // Create binary tree from array (level order)
+
         public Node createFromArray(int[] arr, int index) {
             Node node = null;
             
@@ -29,7 +29,7 @@ public class Q1 {
             return node;
         }
         
-        // Inorder traversal
+
         public void inorder(Node node) {
             if (node != null) {
                 inorder(node.left);
@@ -38,7 +38,7 @@ public class Q1 {
             }
         }
         
-        // Preorder traversal
+
         public void preorder(Node node) {
             if (node != null) {
                 System.out.print(node.data + " ");
@@ -47,7 +47,7 @@ public class Q1 {
             }
         }
         
-        // Postorder traversal
+
         public void postorder(Node node) {
             if (node != null) {
                 postorder(node.left);

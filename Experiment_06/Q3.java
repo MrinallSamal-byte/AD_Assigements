@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.LinkedList;
 
 public class Q3 {
-    // Objective: Construct Graph Adjacency List using Linked Lists
+
     
     static class Graph {
         int vertices;
@@ -18,18 +18,18 @@ public class Q3 {
             }
         }
         
-        // Add edge to undirected graph
+
         public void addEdge(int src, int dest) {
             adjList[src].add(dest);
-            adjList[dest].add(src); // For undirected graph
+            adjList[dest].add(src);
         }
         
-        // Add edge to directed graph
+
         public void addDirectedEdge(int src, int dest) {
             adjList[src].add(dest);
         }
         
-        // Display adjacency list
+
         public void display() {
             System.out.println("\nAdjacency List:");
             for (int i = 0; i < vertices; i++) {
@@ -41,7 +41,7 @@ public class Q3 {
             }
         }
         
-        // Get degree of a vertex
+
         public int getDegree(int vertex) {
             return adjList[vertex].size();
         }

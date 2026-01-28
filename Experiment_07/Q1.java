@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q1 {
-    // Objective: Implement Stack using Array
+
     
     static class Stack {
         private int maxSize;
@@ -14,7 +14,7 @@ public class Q1 {
             top = -1;
         }
         
-        // Push element onto stack
+
         public void push(int value) {
             if (isFull()) {
                 System.out.println("Stack Overflow! Cannot push " + value);
@@ -24,7 +24,7 @@ public class Q1 {
             System.out.println("Pushed: " + value);
         }
         
-        // Pop element from stack
+
         public int pop() {
             if (isEmpty()) {
                 System.out.println("Stack Underflow! Cannot pop");
@@ -33,7 +33,7 @@ public class Q1 {
             return stackArray[top--];
         }
         
-        // Peek top element
+
         public int peek() {
             if (isEmpty()) {
                 System.out.println("Stack is empty");
@@ -42,17 +42,17 @@ public class Q1 {
             return stackArray[top];
         }
         
-        // Check if stack is empty
+
         public boolean isEmpty() {
             return (top == -1);
         }
         
-        // Check if stack is full
+
         public boolean isFull() {
             return (top == maxSize - 1);
         }
         
-        // Display stack
+
         public void display() {
             if (isEmpty()) {
                 System.out.println("Stack is empty");

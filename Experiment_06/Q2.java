@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Q2 {
-    // Objective: Implement Doubly Linked List operations
+
     
-    // Node class
+
     static class Node {
         int data;
         Node prev;
@@ -19,7 +19,7 @@ public class Q2 {
     static class DoublyLinkedList {
         Node head;
         
-        // Insert at beginning
+
         public void insertAtBeginning(int data) {
             Node newNode = new Node(data);
             
@@ -30,7 +30,7 @@ public class Q2 {
             head = newNode;
         }
         
-        // Insert at end
+
         public void insertAtEnd(int data) {
             Node newNode = new Node(data);
             
@@ -47,36 +47,36 @@ public class Q2 {
             newNode.prev = current;
         }
         
-        // Delete a node by value
+
         public void delete(int key) {
             if (head == null) return;
             
             Node current = head;
             
-            // Find the node to delete
+
             while (current != null && current.data != key) {
                 current = current.next;
             }
             
             if (current == null) return;
             
-            // If node to delete is head
+
             if (current == head) {
                 head = current.next;
             }
             
-            // Change next only if not last node
+
             if (current.next != null) {
                 current.next.prev = current.prev;
             }
             
-            // Change prev only if not first node
+
             if (current.prev != null) {
                 current.prev.next = current.next;
             }
         }
         
-        // Display forward
+
         public void displayForward() {
             if (head == null) {
                 System.out.println("List is empty");
@@ -92,7 +92,7 @@ public class Q2 {
             System.out.println("NULL");
         }
         
-        // Display backward
+
         public void displayBackward() {
             if (head == null) {
                 System.out.println("List is empty");

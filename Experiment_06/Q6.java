@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Q6 {
-    // Objective: Merge two sorted linked lists
+
     
-    // Node class
+
     static class Node {
         int data;
         Node next;
@@ -17,7 +17,7 @@ public class Q6 {
     static class LinkedList {
         Node head;
         
-        // Insert at end
+
         public void insertAtEnd(int data) {
             Node newNode = new Node(data);
             
@@ -33,7 +33,7 @@ public class Q6 {
             current.next = newNode;
         }
         
-        // Display the list
+
         public void display() {
             if (head == null) {
                 System.out.println("List is empty");
@@ -49,7 +49,7 @@ public class Q6 {
         }
     }
     
-    // Function to merge two sorted lists
+
     public static Node mergeSortedLists(Node head1, Node head2) {
         if (head1 == null) return head2;
         if (head2 == null) return head1;
@@ -67,7 +67,7 @@ public class Q6 {
         return merged;
     }
     
-    // Iterative approach to merge
+
     public static Node mergeSortedListsIterative(Node head1, Node head2) {
         if (head1 == null) return head2;
         if (head2 == null) return head1;

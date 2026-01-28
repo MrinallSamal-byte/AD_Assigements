@@ -2,7 +2,7 @@ import java.util.Scanner;
 import java.util.HashSet;
 
 public class Q4 {
-    // Objective: Detect duplicate elements in an array
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -26,7 +26,7 @@ public class Q4 {
         sc.close();
     }
     
-    // Function to check if array has duplicates
+
     public static boolean hasDuplicates(int[] arr, int n) {
         HashSet<Integer> set = new HashSet<>();
         
@@ -40,7 +40,7 @@ public class Q4 {
         return false;
     }
     
-    // Function to print all duplicate elements
+
     public static void printDuplicates(int[] arr, int n) {
         HashSet<Integer> set = new HashSet<>();
         HashSet<Integer> duplicates = new HashSet<>();

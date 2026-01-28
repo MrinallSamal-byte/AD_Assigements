@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q2 {
-    // Objective: Merge two sorted arrays into a single sorted array
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -33,7 +33,7 @@ public class Q2 {
         sc.close();
     }
     
-    // Function to merge two sorted arrays
+
     public static int[] mergeSortedArrays(int[] arr1, int[] arr2, int n1, int n2) {
         int[] result = new int[n1 + n2];
         int i = 0, j = 0, k = 0;

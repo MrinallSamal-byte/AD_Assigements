@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q4 {
-    // Objective: Implement Circular Queue
+
     
     static class CircularQueue {
         private int maxSize;
@@ -18,7 +18,7 @@ public class Q4 {
             currentSize = 0;
         }
         
-        // Enqueue element
+
         public void enqueue(int value) {
             if (isFull()) {
                 System.out.println("Queue Overflow! Cannot enqueue " + value);
@@ -35,7 +35,7 @@ public class Q4 {
             System.out.println("Enqueued: " + value);
         }
         
-        // Dequeue element
+
         public int dequeue() {
             if (isEmpty()) {
                 System.out.println("Queue Underflow! Cannot dequeue");
@@ -55,7 +55,7 @@ public class Q4 {
             return value;
         }
         
-        // Peek front element
+
         public int peek() {
             if (isEmpty()) {
                 System.out.println("Queue is empty");
@@ -64,17 +64,17 @@ public class Q4 {
             return queueArray[front];
         }
         
-        // Check if queue is empty
+
         public boolean isEmpty() {
             return (currentSize == 0);
         }
         
-        // Check if queue is full
+
         public boolean isFull() {
             return (currentSize == maxSize);
         }
         
-        // Display queue
+
         public void display() {
             if (isEmpty()) {
                 System.out.println("Queue is empty");

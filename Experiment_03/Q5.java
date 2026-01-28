@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q5 {
-    // Objective: Find the maximum sum subarray (Kadane's Algorithm)
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -21,7 +21,7 @@ public class Q5 {
         sc.close();
     }
     
-    // Kadane's Algorithm to find maximum subarray sum
+
     public static int maxSubarraySum(int[] arr, int n) {
         int maxSoFar = arr[0];
         int maxEndingHere = arr[0];

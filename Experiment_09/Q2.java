@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q2 {
-    // Objective: Create Binary Tree from Linked List
+
     
     static class ListNode {
         int data;
@@ -27,7 +27,7 @@ public class Q2 {
         ListNode head;
         TreeNode root;
         
-        // Insert node in linked list
+
         public void insertInList(int data) {
             ListNode newNode = new ListNode(data);
             
@@ -43,7 +43,7 @@ public class Q2 {
             current.next = newNode;
         }
         
-        // Create binary tree from linked list (level order)
+
         public TreeNode createTreeFromList() {
             if (head == null) return null;
             
@@ -56,14 +56,14 @@ public class Q2 {
             while (current != null) {
                 TreeNode parent = queue.poll();
                 
-                // Add left child
+
                 if (current != null && current.data != -1) {
                     parent.left = new TreeNode(current.data);
                     queue.add(parent.left);
                 }
                 current = (current != null) ? current.next : null;
                 
-                // Add right child
+
                 if (current != null && current.data != -1) {
                     parent.right = new TreeNode(current.data);
                     queue.add(parent.right);
@@ -74,7 +74,7 @@ public class Q2 {
             return root;
         }
         
-        // Inorder traversal
+
         public void inorder(TreeNode node) {
             if (node != null) {
                 inorder(node.left);

@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Q1 {
-    // Objective: Implement Singly Linked List operations
+
     
-    // Node class
+
     static class Node {
         int data;
         Node next;
@@ -17,14 +17,14 @@ public class Q1 {
     static class SinglyLinkedList {
         Node head;
         
-        // Insert at beginning
+
         public void insertAtBeginning(int data) {
             Node newNode = new Node(data);
             newNode.next = head;
             head = newNode;
         }
         
-        // Insert at end
+
         public void insertAtEnd(int data) {
             Node newNode = new Node(data);
             
@@ -40,7 +40,7 @@ public class Q1 {
             current.next = newNode;
         }
         
-        // Delete a node by value
+
         public void delete(int key) {
             if (head == null) return;
             
@@ -59,7 +59,7 @@ public class Q1 {
             }
         }
         
-        // Display the list
+
         public void display() {
             if (head == null) {
                 System.out.println("List is empty");
@@ -74,7 +74,7 @@ public class Q1 {
             System.out.println("NULL");
         }
         
-        // Search for an element
+
         public boolean search(int key) {
             Node current = head;
             while (current != null) {

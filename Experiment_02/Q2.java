@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q2 {
-    // Objective: Generate Fibonacci series using recursion
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -18,7 +18,7 @@ public class Q2 {
         sc.close();
     }
     
-    // Recursive function to calculate nth Fibonacci number
+
     public static int fibonacci(int n) {
         if (n <= 1) {
             return n;

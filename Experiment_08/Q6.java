@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q6 {
-    // Objective: Implement Queue using Linked List
+
     
     static class Node {
         int data;
@@ -24,7 +24,7 @@ public class Q6 {
             size = 0;
         }
         
-        // Enqueue element
+
         public void enqueue(int value) {
             Node newNode = new Node(value);
             
@@ -39,7 +39,7 @@ public class Q6 {
             System.out.println("Enqueued: " + value);
         }
         
-        // Dequeue element
+
         public int dequeue() {
             if (isEmpty()) {
                 System.out.println("Queue Underflow! Cannot dequeue");
@@ -57,7 +57,7 @@ public class Q6 {
             return value;
         }
         
-        // Peek front element
+
         public int peek() {
             if (isEmpty()) {
                 System.out.println("Queue is empty");
@@ -66,17 +66,17 @@ public class Q6 {
             return front.data;
         }
         
-        // Check if queue is empty
+
         public boolean isEmpty() {
             return (front == null);
         }
         
-        // Get size
+
         public int size() {
             return size;
         }
         
-        // Display queue
+
         public void display() {
             if (isEmpty()) {
                 System.out.println("Queue is empty");

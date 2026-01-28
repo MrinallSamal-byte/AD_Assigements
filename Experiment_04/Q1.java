@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q1 {
-    // Objective: Efficiently check if an array is sorted
+
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -26,7 +26,7 @@ public class Q1 {
         sc.close();
     }
     
-    // Function to check if array is sorted in ascending order
+
     public static boolean isSorted(int[] arr, int n) {
         for (int i = 0; i < n - 1; i++) {
             if (arr[i] > arr[i + 1]) {
@@ -36,7 +36,7 @@ public class Q1 {
         return true;
     }
     
-    // Function to check if array is sorted in descending order
+
     public static boolean isSortedDescending(int[] arr, int n) {
         for (int i = 0; i < n - 1; i++) {
             if (arr[i] < arr[i + 1]) {

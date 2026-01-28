@@ -1,9 +1,9 @@
 import java.util.Scanner;
 
 public class Q4 {
-    // Objective: Reverse a Singly Linked List
+
     
-    // Node class
+
     static class Node {
         int data;
         Node next;
@@ -17,7 +17,7 @@ public class Q4 {
     static class LinkedList {
         Node head;
         
-        // Insert at end
+
         public void insertAtEnd(int data) {
             Node newNode = new Node(data);
             
@@ -33,7 +33,7 @@ public class Q4 {
             current.next = newNode;
         }
         
-        // Iterative method to reverse
+
         public void reverseIterative() {
             Node prev = null;
             Node current = head;
@@ -48,7 +48,7 @@ public class Q4 {
             head = prev;
         }
         
-        // Recursive method to reverse
+
         public Node reverseRecursive(Node node) {
             if (node == null || node.next == null) {
                 return node;
@@ -65,7 +65,7 @@ public class Q4 {
             head = reverseRecursive(head);
         }
         
-        // Display the list
+
         public void display() {
             if (head == null) {
                 System.out.println("List is empty");

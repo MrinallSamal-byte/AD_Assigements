@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Q5 {
-    // Objective: Implement In-order Traversal (Left -> Root -> Right)
+
     
     static class Node {
         int data;
@@ -16,7 +16,7 @@ public class Q5 {
     static class BinaryTree {
         Node root;
         
-        // Create binary tree from array
+
         public Node createFromArray(int[] arr, int index) {
             Node node = null;
             
@@ -29,7 +29,7 @@ public class Q5 {
             return node;
         }
         
-        // Inorder traversal (Recursive)
+
         public void inorderRecursive(Node node) {
             if (node != null) {
                 inorderRecursive(node.left);
@@ -38,7 +38,7 @@ public class Q5 {
             }
         }
         
-        // Inorder traversal (Iterative)
+
         public void inorderIterative(Node node) {
             if (node == null) return;
             
