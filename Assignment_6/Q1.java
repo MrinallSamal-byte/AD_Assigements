@@ -79,6 +79,7 @@ public class Q1 {
                     tail = current;
                 }
                 current.next = current.next.next;
+                System.out.println("Element deleted successfully");
             } else {
                 System.out.println("Element not found");
             }

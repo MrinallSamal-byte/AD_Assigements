@@ -2,8 +2,7 @@ import java.util.Scanner;
 
 public class Q1 {
 
-    // Constants for heap indexing clarity
-    private static final int ROOT_INDEX = 0;
+
     
     public static void main(String[] args) {
         Scanner sc = null;

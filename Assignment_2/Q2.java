@@ -5,6 +5,7 @@ import java.util.Map;
 public class Q2 {
     
     // Cache for memoization - improves performance from O(2^n) to O(n)
+    // Note: Not thread-safe. For multi-threaded use, replace with ConcurrentHashMap
     private static Map<Integer, Long> fibCache = new HashMap<>();
     
     public static void main(String[] args) {
